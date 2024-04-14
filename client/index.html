@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Reviews</title>
+    <link rel="stylesheet" href="public/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <h2>Add a Review</h2>
+    <!-- Form to add player information -->
+    <form id="reviewForm">
+        <label for="company-name">Company Name:</label>
+        <input type="text" id="company-name" name="companyname" required>
+
+        <label for="pros">Pros:</label>
+        <textarea name="pros" id="pros" cols="60" rows="10"></textarea>
+        <label for="Cons">cons:</label>
+        <textarea name="cons" id="cons" cols="60" rows="10"></textarea>
+        <div class="card">
+            <h3>Rating</h3>
+            <br />
+            <span onclick="handleRatings(1)"
+                  class="star">★
+            </span>
+            <span onclick="handleRatings(2)"
+                  class="star">★
+            </span>
+            <span onclick="handleRatings(3)"
+                  class="star">★
+            </span>
+            <span onclick="handleRatings(4)"
+                  class="star">★
+            </span>
+            <span onclick="handleRatings(5)"
+                  class="star">★
+            </span>
+            <h3 id="output" class="hiddenInfo">
+                  0
+              </h3>
+        </div>
+        <!-- <input type="number" id="rating" name="rating" placeholder="ratings"> -->
+        <br><br><button type="submit">Submit</button>
+    </form>
+
+    <!-- Search Bar -->
+    <br><br>
+    <div id="searchBar">
+        <input type="text" id="searchCompany" placeholder="Search company...">
+        <button id="searchButton">Submit</button>
+    </div>
+
+    <!-- Hidden section to display player information -->
+    <section id="company-review" class="hiddenInfo">
+        <h2>Company Reviews</h2>
+        <p><strong>Company Name:</strong> <span id="companyName"></span></p>
+        <p><strong>Pros:</strong> <span id="companyPros"></span></p>
+        <p><strong>Cons:</strong> <span id="companyCons"></span></p>
+        <p><strong>Ratings:</strong> <span id="companyRatings"></span></p>
+    </section>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.8/axios.min.js"
+    integrity="sha512-PJa3oQSLWRB7wHZ7GQ/g+qyv6r4mbuhmiDb8BjSFZ8NZ2a42oTtAq5n0ucWAwcQDlikAtkub+tPVCw4np27WCg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="public/js/index.js"></script>
+
+</html>

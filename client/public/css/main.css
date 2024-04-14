@@ -1,0 +1,105 @@
+body{
+    background-color: rgb(63, 61, 61);
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: orangered;
+}
+h2{
+    text-align: center;
+    font-weight: bold;
+    color: orangered;
+}
+h3{
+    font-weight: bold;
+    color: orangered;
+}
+
+.checked {
+    color: orange;
+  }
+
+input {
+    width: 30%;
+    padding: 11px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#searchBar {
+    margin: 25px 0px;
+    margin-left: 50%;
+    width: 100%;
+}
+
+
+#playerInfo {
+    margin: 25px 0px;
+}
+
+.hiddenInfo {
+    display: none;
+}
+
+#company-review{
+    color: orangered;
+    font-weight: bold;
+    font-size: large;
+    margin-left:50%;
+}
+.displayInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    max-width: 33rem;
+    /* background: #fff; */
+    margin: 0 1rem;
+    padding: 1rem;
+    /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); */
+    width: 100%;
+    /* border-radius: 0.5rem; */
+  }
+   
+  .star {
+    font-size: 10vh;
+    cursor: pointer;
+  }
+   
+  .one {
+    color: rgb(255, 0, 0);
+  }
+   
+  .two {
+    color: rgb(255, 106, 0);
+  }
+   
+  .three {
+    color: rgb(251, 255, 120);
+  }
+   
+  .four {
+    color: rgb(255, 255, 0);
+  }
+   
+  .five {
+    color: rgb(24, 159, 14);
+  }
